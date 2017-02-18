@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218113133) do
+ActiveRecord::Schema.define(version: 20170218114940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20170218113133) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["region_id"], name: "index_districts_on_region_id", using: :btree
+  end
+
+  create_table "fire_stations", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "bays"
+    t.bit      "talukbit",   limit: 1
+    t.integer  "hobli_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.index ["hobli_id"], name: "index_fire_stations_on_hobli_id", using: :btree
   end
 
   create_table "hoblis", force: :cascade do |t|
@@ -54,6 +64,7 @@ ActiveRecord::Schema.define(version: 20170218113133) do
   end
 
   add_foreign_key "districts", "regions"
+  add_foreign_key "fire_stations", "hoblis"
   add_foreign_key "hoblis", "taluks"
   add_foreign_key "regions", "zones"
   add_foreign_key "taluks", "districts"
