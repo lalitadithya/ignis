@@ -1,0 +1,2 @@
+class BreakRoom < Building
+end

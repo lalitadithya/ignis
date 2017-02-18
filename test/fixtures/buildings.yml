@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  fire_station: one
+  type: 
+  properties: 
+
+two:
+  name: MyString
+  fire_station: two
+  type: 
+  properties: 

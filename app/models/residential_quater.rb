@@ -1,0 +1,2 @@
+class ResidentialQuaters < Building
+end

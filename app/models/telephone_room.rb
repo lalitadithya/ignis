@@ -1,0 +1,2 @@
+class TelephoneRoom < Building
+end

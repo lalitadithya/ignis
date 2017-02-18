@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218120121) do
+ActiveRecord::Schema.define(version: 20170218122554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "buildings", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "fire_station_id"
+    t.string   "type"
+    t.jsonb    "properties"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["fire_station_id"], name: "index_buildings_on_fire_station_id", using: :btree
+  end
 
   create_table "districts", force: :cascade do |t|
     t.string   "name"
@@ -71,6 +81,7 @@ ActiveRecord::Schema.define(version: 20170218120121) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "buildings", "fire_stations"
   add_foreign_key "districts", "regions"
   add_foreign_key "fire_stations", "hoblis"
   add_foreign_key "hoblis", "taluks"

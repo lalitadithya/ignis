@@ -1,0 +1,2 @@
+class ClassRoom < Building
+end
