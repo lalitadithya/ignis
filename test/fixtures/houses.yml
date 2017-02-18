@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 1
+  bhk: 1
+  building: one
+
+two:
+  num: 1
+  bhk: 1
+  building: two
