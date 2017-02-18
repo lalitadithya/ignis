@@ -1,2 +1,2 @@
-class ResidentialQuaters < Building
+class ResidentialQuater < Building
 end

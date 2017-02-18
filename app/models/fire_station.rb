@@ -6,4 +6,5 @@ class FireStation < ApplicationRecord
   has_one :telephone_room
   has_many :office
   has_one :class_room
+  has_many :residential_quater
 end
