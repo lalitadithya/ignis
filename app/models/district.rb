@@ -1,4 +1,4 @@
 class District < ApplicationRecord
   belongs_to :region
-  has_many :taluk
+  has_many :taluks
 end
