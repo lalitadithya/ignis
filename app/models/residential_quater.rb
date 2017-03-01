@@ -1,3 +1,3 @@
 class ResidentialQuater < Building
-  has_many :house
+  has_many :houses
 end
