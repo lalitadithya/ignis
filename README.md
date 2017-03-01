@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Ignis
+Project Ignis aims to automate the maintenance of the department’s records, provide visualization
+of data collected and also to analyze the data, thereby helping in making decisions with respect
+to vulnerability and human resource available at a particular area. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This repository contains the rails model for the project. 
