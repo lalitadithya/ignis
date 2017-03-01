@@ -1,9 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
+  name: District1
   region: one
 
 two:
-  name: MyString
+  name: District2
   region: two

@@ -1,13 +1,11 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
+  name: Fire Station1 break room
   fire_station: one
-  type: 
+  type: BreakRoom
   properties: 
 
 two:
-  name: MyString
-  fire_station: two
-  type: 
+  name: Fire Station1 Residential Quarter 1
+  fire_station: one
+  type: ResidentialQuater
   properties: 

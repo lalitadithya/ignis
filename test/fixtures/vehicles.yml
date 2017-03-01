@@ -1,9 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
+  name: Vehicle1
   FireStation: one
 
 two:
-  name: MyString
+  name: Vehicle2
   FireStation: two

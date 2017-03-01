@@ -1,13 +1,11 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
+  name: FireStation1
   bays: 1
-  talukbit: 
+  taluk_bit: false
   hobli: one
 
 two:
-  name: MyString
+  name: FireStation2
   bays: 1
-  talukbit: 
+  taluk_bit: false
   hobli: two
