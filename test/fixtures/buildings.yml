@@ -2,10 +2,22 @@ one:
   name: Fire Station1 break room
   fire_station: one
   type: BreakRoom
-  properties: 
+  properties:
 
 two:
   name: Fire Station1 Residential Quarter 1
   fire_station: one
   type: ResidentialQuater
-  properties: 
+  properties:
+
+three:
+  name: Fire Station1 Telephone Room
+  fire_station: one
+  type: TelephoneRoom
+  properties:
+
+four:
+  name: Fire Station1 Class Room
+  fire_station: one
+  type: ClassRoom
+  properties:
