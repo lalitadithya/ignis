@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170305104614) do
+ActiveRecord::Schema.define(version: 20170305104902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -89,8 +89,21 @@ ActiveRecord::Schema.define(version: 20170305104614) do
   create_table "vehicles", force: :cascade do |t|
     t.string   "name"
     t.integer  "fire_station_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "registration_number"
+    t.string   "make"
+    t.string   "model"
+    t.decimal  "cost"
+    t.date     "date_of_puchase"
+    t.string   "chassis_number"
+    t.string   "engine_number"
+    t.float    "capacity_of_fuel_tank"
+    t.string   "tax_card"
+    t.string   "sanction_order_number"
+    t.date     "sanction_date"
+    t.float    "theoretical_mileage"
+    t.decimal  "kilometers_covered"
     t.index ["fire_station_id"], name: "index_vehicles_on_fire_station_id", using: :btree
   end
 
