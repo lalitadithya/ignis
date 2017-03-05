@@ -1,4 +1,4 @@
 class District < ApplicationRecord
-  belongs_to :region
+  belongs_to :fire_station_range
   has_many :taluks
 end

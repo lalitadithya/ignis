@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170305111207) do
+ActiveRecord::Schema.define(version: 20170305112435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,10 +27,18 @@ ActiveRecord::Schema.define(version: 20170305111207) do
 
   create_table "districts", force: :cascade do |t|
     t.string   "name"
-    t.integer  "region_id"
+    t.integer  "fire_station_range_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.index ["fire_station_range_id"], name: "index_districts_on_fire_station_range_id", using: :btree
+  end
+
+  create_table "fire_station_ranges", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "zone_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["region_id"], name: "index_districts_on_region_id", using: :btree
+    t.index ["zone_id"], name: "index_fire_station_ranges_on_zone_id", using: :btree
   end
 
   create_table "fire_stations", force: :cascade do |t|
@@ -73,14 +81,6 @@ ActiveRecord::Schema.define(version: 20170305111207) do
     t.index ["residential_quater_id"], name: "index_houses_on_residential_quater_id", using: :btree
   end
 
-  create_table "regions", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "zone_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["zone_id"], name: "index_regions_on_zone_id", using: :btree
-  end
-
   create_table "taluks", force: :cascade do |t|
     t.string   "name"
     t.integer  "district_id"
@@ -117,10 +117,10 @@ ActiveRecord::Schema.define(version: 20170305111207) do
   end
 
   add_foreign_key "buildings", "fire_stations"
-  add_foreign_key "districts", "regions"
+  add_foreign_key "districts", "fire_station_ranges"
+  add_foreign_key "fire_station_ranges", "zones"
   add_foreign_key "fire_stations", "hoblis"
   add_foreign_key "hoblis", "taluks"
-  add_foreign_key "regions", "zones"
   add_foreign_key "taluks", "districts"
   add_foreign_key "vehicles", "fire_stations"
 end

@@ -1,3 +1,3 @@
 class Zone < ApplicationRecord
-  has_many :regions
+  has_many :fire_station_ranges
 end
