@@ -1,7 +1,33 @@
 one:
   name: Vehicle1
   FireStation: one
+  registration_number: KA01AB001
+  make: my make
+  model: my model
+  cost: 10000.00
+  date_of_puchase: 2010-12-12
+  chassis_number: 889asdna98
+  engine_number: 98as6djk0
+  capacity_of_fuel_tank: 100.1
+  tax_card: 89asd
+  sanction_order_number: as6d213
+  sanction_date: 2010-10-10
+  theoretical_mileage: 12.2
+  kilometers_covered: 5.3
 
 two:
   name: Vehicle2
   FireStation: two
+  registration_number: KA01AB001
+  make: my other make 
+  model: my model
+  cost: 10000.00
+  date_of_puchase: 2010-12-12
+  chassis_number: 889asdna98
+  engine_number: 98as6djk0
+  capacity_of_fuel_tank: 100.1
+  tax_card: 89asd
+  sanction_order_number: as6d213
+  sanction_date: 2010-10-10
+  theoretical_mileage: 12.2
+  kilometers_covered: 5.3
