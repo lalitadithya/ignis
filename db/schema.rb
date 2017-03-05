@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170305110108) do
+ActiveRecord::Schema.define(version: 20170305111207) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,9 +66,10 @@ ActiveRecord::Schema.define(version: 20170305110108) do
     t.integer  "house_number"
     t.integer  "number_of_bedrooms"
     t.integer  "residential_quater_id"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "occupant_designation"
+    t.integer  "status",                default: 0
     t.index ["residential_quater_id"], name: "index_houses_on_residential_quater_id", using: :btree
   end
 
