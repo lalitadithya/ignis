@@ -1,9 +1,11 @@
 one:
   house_number: 100
   number_of_bedrooms: 2
+  occupant_designation: leading fireman
   building: two
 
 two:
   house_number: 101
   number_of_bedrooms: 2
+  occupant_designation: leading fireman
   building: two
