@@ -3,9 +3,29 @@ one:
   bays: 1
   taluk_bit: false
   hobli: one
+  government_saction_numer: 11asoc
+  address: HSR Layout
+  latitude: 66.3
+  longitude: 12.0
+  phone_number: 888888888
+  land_area: 123.5
+  date_of_establishment: 2010-02-12
+  cost_of_establishment: 100.0
+  sanctioned_strength: 12
+  floor_plan: /img/floor_plan1.jpg
 
 two:
   name: FireStation2
   bays: 1
   taluk_bit: false
   hobli: two
+  government_saction_numer: 12asoc
+  address: HSR Layout
+  latitude: 66.3
+  longitude: 12.0
+  phone_number: 888888888
+  land_area: 123.5
+  date_of_establishment: 2010-02-12
+  cost_of_establishment: 100.0
+  sanctioned_strength: 12
+  floor_plan: /img/floor_plan1.jpg
